@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sudoku</title>
+    <style>
+        html{
+            background-color: aqua;
+        }
+        div#sudokutablo{
+            background-color: aliceblue;
+        width: 343px;
+        height: 325px;
+        border: 5px double black;
+    display:flex;
+     flex-wrap: wrap;
+     padding:2px;
+     text-align:center;
+   
+        }
+        input{
+            width: 24px;
+            height: 24px;
+            margin: 0;
+            border: 1px solid blue;
+            text-align: center;
+        }
+        td{
+            margin: 0%;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9{
+            border: 2px solid black;
+            background-color: rgb(250, 215, 234);
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="margin-left: 90px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">SUDOKU</h1>
+    <div id="sudokutablo">
+    <table class="box1">
+       <tr>
+        <td><input type="text" value="5"></td>
+        <td><input type="text"value="3" ></td>
+        <td><input type="text"value="4" ></td>
+       </tr>
+       <tr>
+        <td><input type="text" value="6" ></td>
+        <td><input type="text" value="7"></td>
+        <td><input type="text" value="2"></td>
+       </tr>
+       <tr>
+        <td><input type="text" value="1"></td>
+        <td><input type="text" value="9"></td>
+        <td><input type="text" value="8"></td>
+       </tr>
+    </table>
+
+    <table class="box2">
+        <tr>
+         <td><input type="text" value="6"></td>
+         <td><input type="text" value="7"></td>
+         <td><input type="text" value="8"></td>
+        </tr>
+        <tr>
+         <td><input type="text" value="1"></td>
+         <td><input type="text" value="9"></td>
+         <td><input type="text" value="5"></td>
+        </tr>
+        <tr>
+         <td><input type="text" value="3"></td>
+         <td><input type="text" value="4"></td>
+         <td><input type="text" value="2"></td>
+        </tr>
+     </table>
+
+     <table class="box3">
+        <tr>
+         <td><input type="text" value="9"></td>
+         <td><input type="text" value="1"></td>
+         <td><input type="text" value="2"></td>
+        </tr>
+        <tr>
+         <td><input type="text" value="3"></td>
+         <td><input type="text" value="4"></td>
+         <td><input type="text" value="8"></td>
+        </tr>
+        <tr>
+         <td><input type="text" value="5"></td>
+         <td><input type="text" value="6"></td>
+         <td><input type="text" value="7"></td>
+        </tr>
+     </table>
+
+    
+     <table class="box4">
+        <tr>
+         <td><input type="text"value="8" ></td>
+         <td><input type="text" value="5"></td>
+         <td><input type="text" value="9"></td>
+        </tr>
+        <tr>
+         <td><input type="text"value="4"></td>
+         <td><input type="text"value="2"></td>
+         <td><input type="text" value="6"></td>
+        </tr>
+        <tr>
+         <td><input type="text" value="7"></td>
+         <td><input type="text" value="1"></td>
+         <td><input type="text"value="3"></td>
+        </tr>
+     </table>
+     
+     <table class="box5">
+        <tr>
+         <td><input type="text"value="7"></td>
+         <td><input type="text"value="6"></td>
+         <td><input type="text"value="1"></td>
+        </tr>
+        <tr>
+         <td><input type="text"value="8"></td>
+         <td><input type="text"value="5"></td>
+         <td><input type="text"value="3"></td>
+        </tr>
+        <tr>
+         <td><input type="text"value="9"></td>
+         <td><input type="text"value="2"></td>
+         <td><input type="text"value="4"></td>
+        </tr>
+     </table>
+     
+     <table class="box6">
+        <tr>
+         <td><input type="text"value="4"></td>
+         <td><input type="text"value="2"></td>
+         <td><input type="text"value="3"></td>
+        </tr>
+        <tr>
+         <td><input type="text"value="7"></td>
+         <td><input type="text"value="9"></td>
+         <td><input type="text"value="1"></td>
+        </tr>
+        <tr>
+         <td><input type="text"value="8"></td>
+         <td><input type="text"value="5"></td>
+         <td><input type="text"value="6"></td>
+        </tr>
+     </table>
+
+     <table class="box7">
+        <tr>
+         <td><input type="text"value="9"></td>
+         <td><input type="text"value="6"></td>
+         <td><input type="text"value="1"></td>
+        </tr>
+        <tr>
+         <td><input type="text"value="2"></td>
+         <td><input type="text"value="8"></td>
+         <td><input type="text"value="7"></td>
+        </tr>
+        <tr>
+         <td><input type="text"value="3"></td>
+         <td><input type="text"value="4"></td>
+         <td><input type="text"value="5"></td>
+        </tr>
+     </table>
+     
+     <table class="box8">
+        <tr>
+         <td><input type="text"value="5"></td>
+         <td><input type="text"value="3"></td>
+         <td><input type="text"value="7"></td>
+        </tr>
+        <tr>
+         <td><input type="text"value="4"></td>
+         <td><input type="text"value="1"></td>
+         <td><input type="text"value="9"></td>
+        </tr>
+        <tr>
+         <td><input type="text"value="2"></td>
+         <td><input type="text"value="8"></td>
+         <td><input type="text"value="6"></td>
+        </tr>
+     </table>
+     
+     <table class="box9">
+        <tr>
+         <td><input type="text"value="2"></td>
+         <td><input type="text"value="8"></td>
+         <td><input type="text"value="4"></td>
+        </tr>
+        <tr>
+         <td><input type="text"value="6"></td>
+         <td><input type="text"value="3"></td>
+         <td><input type="text"value="5"></td>
+        </tr>
+        <tr>
+         <td><input type="text"value="1"></td>
+         <td><input type="text"value="7"></td>
+         <td><input type="text"value="9"></td>
+        </tr>
+     </table>
+
+    </div>
+     
+     
+</body>
+</html>
