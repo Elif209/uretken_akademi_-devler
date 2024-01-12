@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri</title>
+    <style>
+        .başlık {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: rgb(27, 14, 209);
+            text-align: center;
+        }
+
+        body {
+            background-color: bisque;
+        }
+
+        #yenile {
+            color:rgb(27, 14, 209) ;
+            text-align: center;
+        }
+
+        #rasgele {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        #rasgele img {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="başlık">
+        <h1>Fotoğraf Galerisi</h1>
+    </header>
+    <main>
+        <section id="rasgele"></section>
+        <button id="yenile">Yenile</button>
+    </main>
+
+    <script>
+        var rasgele = document.getElementById("rasgele");
+
+        for (let i = 0; i < 15; i++) {
+            rasgele.innerHTML += `<img src="https://source.unsplash.com/random/${i + 1}" alt="photo">`;
+        }
+
+        var yenile = document.getElementById("yenile");
+
+        yenile.addEventListener("click", function () {
+            location.reload();
+        });
+    </script>
+</body>
+</html>
